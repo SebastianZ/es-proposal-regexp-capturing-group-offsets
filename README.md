@@ -154,20 +154,20 @@ Then `matches` will contain this:
 [
   {
     match: "abc",
-  start: 0,
-  end: 3,
-  groups: [
-    {
-      match: "bc",
-    start: 1,
-    end: 3
-    }
-    {
-      match: "c",
-    start: 2,
-    end: 3
-    }
-  ]
+    start: 0,
+    end: 3,
+    groups: [
+      {
+        match: "bc",
+        start: 1,
+        end: 3
+      }
+      {
+        match: "c",
+        start: 2,
+        end: 3
+      }
+    ]
   }
 ]
 ```
