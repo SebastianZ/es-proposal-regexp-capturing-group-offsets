@@ -8,13 +8,11 @@ ECMAScript allows to match a regular expression against a string, which returns 
 
 ## Proposed solution
 
-### Extend the return value of `RegExp.prototype.exec()` to include the capturing groups offsets
+The array returned by [`RegExp.prototype.exec()`](http://www.ecma-international.org/ecma-262/6.0/#sec-regexp.prototype.exec) should be extended by an `offsets` property, which represents an array of the start indices of the match and all the captured groups.
 
-The array returned by [`RegExp.prototype.exec()`](http://www.ecma-international.org/ecma-262/6.0/#sec-regexp.prototype.exec) should include an `offsets` property, which represents an array of the start indices of the match and all the captured groups.
+### Examples
 
-#### Examples
-
-##### Non-global regular expression
+#### Non-global regular expression
 
 ```javascript
 let matches = /a(b(c))/.exec("abcabc");
@@ -37,7 +35,7 @@ Then `matches` will contain this:
 }
 ```
 
-##### Global regular expression
+#### Global regular expression
 
 ```javascript
 let matches = /a(b(c))/g.exec("abcabc");
@@ -76,3 +74,8 @@ And this when executed the second time:
   ]
 }
 ```
+
+## Previous discussions
+
+- http://stackoverflow.com/q/7228584/432681
+- http://stackoverflow.com/q/1985594/432681
