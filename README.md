@@ -79,3 +79,4 @@ And this when executed the second time:
 
 - http://stackoverflow.com/q/7228584/432681
 - http://stackoverflow.com/q/1985594/432681
+- https://github.com/tc39/String.prototype.matchAll/issues/13
