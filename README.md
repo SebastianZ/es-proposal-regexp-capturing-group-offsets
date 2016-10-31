@@ -1,6 +1,6 @@
-# Advanced information for regular expression matches
+# Regular expression capturing group offsets
 
-ECMAScript proposal, specs and tests for advanced regular expression matches information.
+ECMAScript proposal for offset information for capturing groups in regular expressions.
 
 ## Rationale
 
